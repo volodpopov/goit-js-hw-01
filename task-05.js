@@ -5,42 +5,40 @@ let userCountry = prompt(
   '',
 );
 
-if (userCountry == null) {
+if (userCountry === null) {
   console.log('Отменено пользователем!');
 } else {
-  userCountry = userCountry.toLowerCase();
+  const costDeliveryChina = 100;
+  const costDeliveryChili = 250;
+  const costDeliveryAustralia = 170;
+  const costDeliveryIndia = 80;
+  const costDeliveryJamaica = 120;
 
-  let costDelivery;
-
-  switch (userCountry) {
+  
+  switch (userCountry.toLowerCase()) {
     case 'китай':
-      costDelivery = 100;
       console.log(
-        `Доставка в ${userCountry} будет стоить ${costDelivery} кредитов.`,
+        `Доставка в ${userCountry.toLowerCase()} будет стоить ${costDeliveryChina} кредитов.`,
       );
       break;
     case 'чили':
-      costDelivery = 250;
       console.log(
-        `Доставка в ${userCountry} будет стоить ${costDelivery} кредитов.`,
+        `Доставка в ${userCountry.toLowerCase()} будет стоить ${costDeliveryChili} кредитов.`,
       );
       break;
     case 'автралия':
-      costDelivery = 170;
       console.log(
-        `Доставка в ${userCountry} будет стоить ${costDelivery} кредитов.`,
+        `Доставка в ${userCountry.toLowerCase()} будет стоить ${costDeliveryAustralia} кредитов.`,
       );
       break;
     case 'индия':
-      costDelivery = 80;
       console.log(
-        `Доставка в ${userCountry} будет стоить ${costDelivery} кредитов.`,
+        `Доставка в ${userCountry.toLowerCase()} будет стоить ${costDeliveryIndia} кредитов.`,
       );
       break;
     case 'ямайка':
-      costDelivery = 120;
       console.log(
-        `Доставка в ${userCountry} будет стоить ${costDelivery} кредитов.`,
+        `Доставка в ${userCountry.toLowerCase()} будет стоить ${costDeliveryJamaica} кредитов.`,
       );
       break;
     default:

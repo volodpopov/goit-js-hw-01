@@ -4,7 +4,7 @@ const ADMIN_PASSWORD = 'qwerty';
 let message;
 let userInput = prompt('Введите пароль администратора:', '');
 
-if (userInput == null) {
+if (userInput === null) {
   message = 'Отменено пользователем!';
 } else if (userInput === ADMIN_PASSWORD) {
   message = 'Добро пожаловать!';

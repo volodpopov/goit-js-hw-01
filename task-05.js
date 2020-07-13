@@ -18,31 +18,31 @@ if (userCountry === null) {
   switch (userCountry.toLowerCase()) {
     case 'китай':
       console.log(
-        `Доставка в ${userCountry.toLowerCase()} будет стоить ${costDeliveryChina} кредитов.`,
+        `Доставка в Китай будет стоить ${costDeliveryChina} кредитов.`,
       );
       break;
     case 'чили':
       console.log(
-        `Доставка в ${userCountry.toLowerCase()} будет стоить ${costDeliveryChili} кредитов.`,
+        `Доставка в Чили будет стоить ${costDeliveryChili} кредитов.`,
       );
       break;
     case 'автралия':
       console.log(
-        `Доставка в ${userCountry.toLowerCase()} будет стоить ${costDeliveryAustralia} кредитов.`,
+        `Доставка в Австралию будет стоить ${costDeliveryAustralia} кредитов.`,
       );
       break;
     case 'индия':
       console.log(
-        `Доставка в ${userCountry.toLowerCase()} будет стоить ${costDeliveryIndia} кредитов.`,
+        `Доставка в Индию будет стоить ${costDeliveryIndia} кредитов.`,
       );
       break;
     case 'ямайка':
       console.log(
-        `Доставка в ${userCountry.toLowerCase()} будет стоить ${costDeliveryJamaica} кредитов.`,
+        `Доставка в Ямайку будет стоить ${costDeliveryJamaica} кредитов.`,
       );
       break;
     default:
-      alert('В вашей стране доставка недоступна');
+      alert('В вашу страну доставка недоступна');
       break;
   }
 }
